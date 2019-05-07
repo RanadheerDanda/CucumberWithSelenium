@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -38,6 +39,20 @@ public class LoginStepDefinition {
 		driver.findElement(By.name("username")).sendKeys("Dranadheer");
 		driver.findElement(By.name("password")).sendKeys("test@1234");
 	}
+	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String username, String password) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);
+	} 
+	
+	/*	
+	 Reg Exp:
+	 1. \"([^\"]*)\"
+	 2. \"(.*)\"
+*/	
+	
+	
 
 	@Then("^user clicks on login button$")
 	public void user_clicks_on_login_button()  {
@@ -60,4 +75,21 @@ public class LoginStepDefinition {
 		driver.quit();
 	}
 
+	 @Then("^user moves to new contact page$")
+	 public void user_moves_to_new_contact_page() {
+		driver.switchTo().frame("mainpanel");
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
+		
+		}
+	 
+	 
+	 @Then("^user enters contact details \"(.*)\" and \"(.*)\" and \"(.*)\"$")
+	 public void user_enters_contacts_details(String firstname, String lastname, String position){
+		 driver.findElement(By.id("first_name")).sendKeys(firstname);
+		 driver.findElement(By.id("surname")).sendKeys(lastname);
+		 driver.findElement(By.id("company_position")).sendKeys(position);
+		 driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
+	 }
 }

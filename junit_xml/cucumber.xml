@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.538702">
-    <testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="14.538702">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="38.133352">
+    <testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario" time="20.796518">
         <system-out>
             <![CDATA[Given User is already on login page.........................................passed
 When title of Login page is Free CRM........................................passed
-Then user enters username and password......................................passed
+Then user enters "Dranadheer" and "test@1234"...............................passed
 Then user clicks on login button............................................passed
 Then user is on home page...................................................passed
+Then user moves to new contact page.........................................passed
+Then user enters contact details "Tom" and "Peter" and "Manager"............passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario 2" time="17.336834">
+        <system-out>
+            <![CDATA[Given User is already on login page.........................................passed
+When title of Login page is Free CRM........................................passed
+Then user enters "Dranadheer" and "test@1234"...............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then user moves to new contact page.........................................passed
+Then user enters contact details "David" and "Dsouza" and "Director"........passed
 Then Close the browser......................................................passed
 ]]>
         </system-out>

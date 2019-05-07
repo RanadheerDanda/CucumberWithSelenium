@@ -1,0 +1,18 @@
+Feature: Free CRM Create Contacts
+
+Scenario Outline: Free CRM Create a new contact scenario
+
+Given User is already on login page
+When title of Login page is Free CRM
+Then user enters "<username>" and "<password>"
+Then user clicks on login button
+Then user is on home page
+Then user moves to new contact page
+Then user enters contact details "<firstname>" and "<lastname>" and "<position>"
+Then Close the browser
+
+Examples:
+	| username | password | firstname | lastname | position |
+	| Dranadheer  | test@1234 | Tom 	  | Peter    | Manager  |
+	| Dranadheer  | test@1234 | David 	  | Dsouza   | Director |	
+	
