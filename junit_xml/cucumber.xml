@@ -1,15 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.809834">
-    <testcase classname="Deal data creation" name="Free CRM Create a new deal scenario" time="30.809834">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="18" time="0.112463">
+    <testcase classname="Free CRM application testing" name="Login with correct username and correct password" time="0.109826">
         <system-out>
-            <![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Free CRM........................................passed
-Then user enters username and password......................................passed
-Then user clicks on login button............................................passed
-Then user is on home page...................................................passed
-Then user moves to new deal page............................................passed
-Then user enters deal details...............................................passed
-Then Close the browser......................................................passed
+            <![CDATA[Given This is a valid login test............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Login with incorrect username and correct password" time="0.000131">
+        <system-out>
+            <![CDATA[Given This is a invalid login test..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Create a contact" time="0.000098">
+        <system-out>
+            <![CDATA[Given This is a contact test case...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Create a deal" time="0.000119">
+        <system-out>
+            <![CDATA[Given This is a deal test case..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Create a tasks" time="0.000112">
+        <system-out>
+            <![CDATA[Given This is a tasks test case.............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Create a case" time="0.000108">
+        <system-out>
+            <![CDATA[Given This is a case test case..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Verify left panel links" time="0.000101">
+        <system-out>
+            <![CDATA[Given clicking on left panel links..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a deal" time="0.00011">
+        <system-out>
+            <![CDATA[Given This is a search deal test............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a contact" time="0.0001">
+        <system-out>
+            <![CDATA[Given This is a search contact test.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a case" time="0.000085">
+        <system-out>
+            <![CDATA[Given This is a search case test............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a task" time="0.000137">
+        <system-out>
+            <![CDATA[Given This is a search task test............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a call" time="0.000102">
+        <system-out>
+            <![CDATA[Given This is a search call test............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search an email" time="0.000143">
+        <system-out>
+            <![CDATA[Given This is a search email test...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a docs" time="0.000131">
+        <system-out>
+            <![CDATA[Given This is a search docs test............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Search a forms" time="0.000137">
+        <system-out>
+            <![CDATA[Given This is a search forms test...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="validate a report" time="0.00078">
+        <system-out>
+            <![CDATA[Given This is a report test.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="Application Logout" time="0.000121">
+        <system-out>
+            <![CDATA[Given This is a logout test.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free CRM application testing" name="browser closed" time="0.000122">
+        <system-out>
+            <![CDATA[Given This is a close broswer test..........................................passed
 ]]>
         </system-out>
     </testcase>
