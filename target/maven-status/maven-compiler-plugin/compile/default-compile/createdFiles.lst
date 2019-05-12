@@ -1,1 +1,4 @@
-stepDefinition.class
+stepDefinition\TaggingStepDefinition.class
+stepDefinition\stepDefinition.class
+MyRunner\TestRunner.class
+stepDefinition\TaggedHooksStepDefinition.class
